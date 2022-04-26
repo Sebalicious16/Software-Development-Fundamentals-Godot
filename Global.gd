@@ -8,4 +8,4 @@ var scoringInformation = {
 	"currentPlayer": "User",
 	"highScore": 0,
 	"highScorePlayersName" : "Winner"
-}
+} 
