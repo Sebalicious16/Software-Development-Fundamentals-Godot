@@ -15,10 +15,12 @@ func _ready():
 		currentTimer = currentTimer - 1
 		print(currentTimer)
 	print("GAME OVER")
+	get_tree().change_scene("res://lose scene.tscn")
 	
-
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
+func _process(delta):
+	$HUD/currentScore.text = str(GlobalVariables.scoringInformation["currentScore"])
+	if get_tree().get_nodes_in_group("Enemy").size() == 0:
+		get_tree().change_scene("res://win scene.tscn")
 #	pass
 
