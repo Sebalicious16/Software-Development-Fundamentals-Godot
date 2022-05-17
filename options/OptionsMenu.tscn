@@ -1,11 +1,16 @@
-[gd_scene format=2]
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://ButtonScrpt.gd" type="Script" id=1]
+[ext_resource path="res://Menu.gd" type="Script" id=2]
 
 [node name="OptionsMenu" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+buttonRoot = "Layout/Button"
 
 [node name="Layout" type="VBoxContainer" parent="."]
 margin_right = 40.0
@@ -21,8 +26,14 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="ReturnToMainMenu" type="Button" parent="Layout"]
+[node name="Button" type="VBoxContainer" parent="Layout"]
 margin_top = 44.0
 margin_right = 136.0
 margin_bottom = 64.0
+
+[node name="ReturnToMainMenu" type="Button" parent="Layout/Button"]
+margin_right = 136.0
+margin_bottom = 20.0
 text = "ReturnToMainMenu"
+script = ExtResource( 1 )
+scene_to_load = "res://Menu.tscn"
