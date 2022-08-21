@@ -122,10 +122,10 @@ margin_bottom = 720.0
 alignment = 1
 
 [node name="Label" type="Label" parent="layout/Credits"]
-margin_left = 527.0
-margin_right = 753.0
+margin_left = 554.0
+margin_right = 726.0
 margin_bottom = 14.0
-text = "Copyright Sebastyen Filipinski 2022"
+text = "Copyright Sebalicious 2022"
 align = 1
 [connection signal="pressed" from="layout/Main/Buttons/GameScenes/Start Game Button" to="." method="_on_Start_Game_Button_pressed"]
 [connection signal="pressed" from="layout/Main/Buttons/Quit" to="layout/Main/Buttons/Quit" method="_on_Quit_pressed"]
